@@ -47,7 +47,7 @@ const getArticleDOM = function (repo) {
 
 function get_repo() {
 	const openSource = {
-		githubConvertedToken: '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',
+		githubConvertedToken: 'sUBVrqAzs6RF8gaSpfwHJmr15QYvhV1HIrs1',
 		githubUserName: 'Paras-code-007',
 	};
 
@@ -83,7 +83,7 @@ function get_repo() {
 
 	const headers = {
 		'Content-Type': 'application/json',
-		Authorization: 'bearer ' + openSource.githubConvertedToken,
+		Authorization: 'bearer ghp_' + openSource.githubConvertedToken,
 	};
 
 	fetch(baseUrl, {
@@ -93,6 +93,7 @@ function get_repo() {
 	})
 		.then((response) => response.json())
 		.then((x) => {
+			console.log(x);
 			const obj = x.data.user.pinnedItems.nodes;
 			repos = obj;
 
