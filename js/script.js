@@ -47,7 +47,7 @@ const getArticleDOM = function (repo) {
 
 function get_repo() {
 	const openSource = {
-		githubConvertedToken: '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',
+		githubConvertedToken: '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',
 		githubUserName: 'Paras-code-007',
 	};
 
