@@ -31,7 +31,7 @@ const getArticleDOM = function (repo) {
 	// 		tags += repo.languages.nodes[i].name + ',';
 	// 	}
 	// }
-	let imgTag = `<img src="${repo.openGraphImageUrl}" class="projimg" alt="${repo.name}">`;
+	let imgTag = `<img src="${repo.openGraphImageUrl}" class="projimg" loading="lazy" alt="${repo.name}">`;
 
 	return `<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 project box no-border no-padding">
                 <a href="${repoLink}" target="_blank">
